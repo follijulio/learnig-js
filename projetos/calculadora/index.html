@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>calculadora</title>
+    <script src="calculadora.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="maiu-display">
+        <input type="text" class="display" id="display" disabled />
+      </div>
+      <div class="miau">
+        <button type="button" class="botao-calculadora"  onclick="implementarDisplay('7')">7</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('8')">8</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('9')">9</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('/')" >&divide;</button>
+      </div>
+      <div class="miau">
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('4')" >4</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('5')" >5</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('6')" >6</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('*')" >&times</button>
+      </div>
+
+      <div class="miau">
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('1')" >1</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('2')" >2</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('3')" >3</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('-')" >&minus;</button>
+      </div>
+
+      <div class="miau">
+        <button type="button" class="botao-calculadora" onclick="limparDisplay()">C</button>
+        <button type="button" class="botao-calculadora" >&radic;</button>
+        <button type="button" class="botao-calculadora" >X²</button>
+        <button type="button" class="botao-calculadora" onclick="implementarDisplay('+')">&plus;</button>
+      </div>
+      <div class="miau">
+        <button type="button" class="botao-calcular" onclick="calcular()">&equals;</button>
+      </div>
+    </div>
+  </body>
+</html>
