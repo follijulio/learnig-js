@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/*FUNDO*/
+.display {
+  height: 5rem;
+  width: 95%;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  background-color: black;
+  justify-content: space-between;
+  height: 38rem;
+  width: 25rem;
+}
+.miau {
+  display: flex;
+  justify-content: space-between;
+}
+.miau-display {
+  width: 100%;
+  display: flex;
+}
+/*BOTÕES*/
+.botao-calcular {
+  height: 5rem;
+  width: 25rem;
+  background-color: darkgray;
+}
+
+.botao-calculadora {
+  height: 6rem;
+  width: 6rem;
+  text-align: center;
+  background-color: darkgray;
+}
+
+/*HOVER*/
+.botao-calculadora:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /*PEGUEI NA NET*/
+  transition-duration: 200ms;
+  scale: 105%;
+}
+.botao-calcular:hover {
+  background-color: gray;
+}
