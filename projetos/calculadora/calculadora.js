@@ -1,20 +1,17 @@
-function soma(valor1, valor2) {
-  return valor1 + valor2;
+function calcular() {
+  var calculo = document.getElementById("display").value;
+  if (calculo === "") {
+    limparDisplay();
+    implementarDisplay("ERRO");
+  } else {
+    var resultado = eval(calculo);
+    limparDisplay();
+    implementarDisplay(resultado);
+  }
 }
-
-function sub(valor1, valor2) {
-  return valor1 - valor2;
+function implementarDisplay(valor) {
+  document.getElementById("display").value += valor;
 }
-
-function mult(valor1, valor2) {
-  return valor1 * valor2;
+function limparDisplay() {
+  document.getElementById("display").value = "";
 }
-
-function div(valor1, valor2) {
-  return valor1 / valor2;
-}
-
-console.log(soma(9, 5));
-console.log(sub(8, 2));
-console.log(mult(5, 5));
-console.log(div(100 , 10));
