@@ -6,6 +6,10 @@ const filmes = require("./src/data/filmes.json");
 server.get("/", (req, res) => {
   return res.json({ mensagem: "rodando server" });
 });
+//TEST 2
+server.get("/usuarios", (req, res) => {
+  return res.json({ usuario: "Júlio César" });
+});
 
 server.listen(3000, () => {
   console.log("rodando...");
