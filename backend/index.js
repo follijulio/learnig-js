@@ -1,6 +1,9 @@
 const express = require("express");
 const server = express();
+const cors = require("cors");
 const filmes = require("./src/data/filmes.json");
+
+server.use(cors());
 
 //TEST 1
 server.get("/", (req, res) => {
