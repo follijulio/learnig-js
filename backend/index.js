@@ -11,7 +11,7 @@ server.get("/", (req, res) => {
 });
 
 //TEST 2
-server.get("/usuarios", (req, res) => {
+server.get("/user", (req, res) => {
   return res.json({ usuario: "Júlio César" });
 });
 
