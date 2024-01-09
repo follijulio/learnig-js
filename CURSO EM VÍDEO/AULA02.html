@@ -11,6 +11,7 @@
       var secondNumber = Number(prompt("what's the second number?"))
       var sum = firstNumber + secondNumber
       alert(`the sum is ${sum.toFixed(2)}`);
+      alert(`this number in BRL ${sum.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'})}`)
     </script>
   </body>
 </html>
