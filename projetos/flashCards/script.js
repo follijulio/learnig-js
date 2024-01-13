@@ -1,0 +1,66 @@
+/*
+Variáveis
+*/
+var show = true;
+
+/*
+funções
+*/
+function redirect(redirection) {
+  window.open(`${redirection}`);
+}
+function increment(pergunta, resposta) {
+  document.getElementById("area").innerText = show ? pergunta : resposta;
+}
+
+function toggleQuestion() {
+  show = !show;
+  increment(perguntas[index], respostas[index]);
+}
+
+function newQuestion() {
+  show = true;
+  main();
+}
+
+function main() {
+  perguntas = [
+    "QUAIS FORAM OS TRÊS PRINCIPAIS PAÍSES DO EIXO NA SEGUNDA GUERRA MUNDIAL?",
+    "O QUE FOI O DIA D?",
+    "QUAL FOI O NOME DA OPERAÇÃO QUE LEVOU À INVASÃO DA ITÁLIA DURANTE A SEGUNDA GUERRA MUNDIAL?",
+    "QUEM FORAM OS LÍDERES DAS TRÊS GRANDES POTÊNCIAS ALLIED?",
+    "QUAL FOI O NOME DA CONFERÊNCIA ONDE OS LÍDERES ALLIED SE REUNIRAM PARA DISCUTIR O PÓS-GUERRA?",
+    "O QUE FOI O MASSACRE DE NANJING?",
+    "COMO ERA CONHECIDO O PERÍODO DE INTENSA BOMBARDEIO DE LONDRES PELO GERMANY?",
+    "O QUE FOI O TRATADO DE VERSALHES E COMO ELE CONTRIBUIU PARA A SEGUNDA GUERRA MUNDIAL?",
+    "QUAIS FORAM AS PRINCIPAIS CAUSAS DA ENTRADA DOS ESTADOS UNIDOS NA SEGUNDA GUERRA MUNDIAL?",
+    "QUAL FOI O PAÍS PRIMEIRO ATACADO PELAS TROPAS ALEMÃS NA SEGUNDA GUERRA MUNDIAL?",
+  ];
+
+  respostas = [
+    "Alemanha, Itália e Japão.",
+    "O Dia D foi o desembarque das forças aliadas na Normandia em 6 de junho de 1944.",
+    "A operação foi chamada de 'Operação Husky', envolvendo a invasão aliada da Sicília em 1943.",
+    "Os líderes das Três Grandes Potências Allied eram Franklin D. Roosevelt, Winston Churchill e Joseph Stalin.",
+    "A Conferência de Yalta, realizada em fevereiro de 1945.",
+    "O Massacre de Nanjing foi um episódio brutal em que as tropas japonesas cometeram atrocidades na China em 1937-1938.",
+    "O período de intenso bombardeio de Londres pelo Germany era conhecido como o 'Blitz' (1940-1941).",
+    "O Tratado de Versalhes, assinado em 1919, impôs duras condições à Alemanha após a Primeira Guerra Mundial e contribuiu para o surgimento de tensões que levaram à Segunda Guerra Mundial.",
+    "As principais causas da entrada dos Estados Unidos na Segunda Guerra Mundial incluíram o ataque japonês a Pearl Harbor e a ameaça das potências do Eixo à estabilidade global.",
+    "O primeiro país atacado pelas tropas alemãs na Segunda Guerra Mundial foi a Polônia.",
+  ];
+
+  index = randon(0, 10);
+  increment(perguntas[index], respostas[index]);
+}
+
+function randon(max, min) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+function exit(){
+    window.location.href='https://www.google.com';
+}
+
+main();
