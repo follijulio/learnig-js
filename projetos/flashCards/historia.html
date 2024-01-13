@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HISTÓRIA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="total-center m-2">
+        <button class="action-button" onclick="toggleQuestion()">
+          <p class="title">Resposta</p>
+        </button>
+        <button class="action-button" onclick="newQuestion()">
+          <p class="title">Nova pergunta</p>
+        </button>
+      </div>
+      <div class="text total-center m-2">
+        <button class="card-question">
+          <p id="area"></p>
+        </button>
+      </div>
+      <button onclick="redirect('/perguntas.html')">VOLTAR</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
