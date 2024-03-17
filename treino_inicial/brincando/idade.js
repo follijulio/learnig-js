@@ -4,7 +4,7 @@ function verificarIdade(valores) {
   var acima = [];
   var abaixo = [];
   for (var i = 0; i < valores.length; i++) {
-    if (valores[i] >= 18) {
+    if (valores[i] >= 20) {
       acima.push(valores[i]);
     } else {
       abaixo.push(valores[i]);
