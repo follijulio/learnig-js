@@ -10,8 +10,8 @@ function fazerPost(body, url) {
 }
 
 function cadastrarUser() {
-  let url = "http://localhost:3000/user";
   event.preventDefault();
+  let url = "http://localhost:3000/user";
   let nome = document.getElementById("nome").value;
   let email = document.getElementById("email").value;
   body = {
